@@ -1,78 +1,79 @@
 /* CSS Reset */
-*{
+* {
     margin: 0;
     padding: 0;
-}
-/* CSS Variables */
-:root{
-    --navigation-height:100px
-}
-/* Navigation Bar */
-#navbar{
-    display: flex;
-    
+    box-sizing: border-box;
+  }
+  /* CSS Variables */
+  :root {
+    --navigation-height: 100px;
+  }
+  /* Navigation Bar */
+  /* #navbar { */
+  /* display: flex;
     align-items: center;
     position: relative;
-    top: 0px;
-}
-#navbar::before{
+    top: 0px; */
+  /* } */
+  
+  /* #navbar::before {
     content: "";
     background-color: black;
     position: absolute;
     top: 0px;
     left: 0px;
-    
+  
     height: 90%;
     width: 100%;
     z-index: -1;
     opacity: 0.4;
-}
-/*  Navigation Bar: Logo and Images */
-#logo{
-   
-margin: 10px 30px;
-}
-#logo img{
-height: 50px;
-margin: 10px 20px;
-}
-/*  Navigation Bar: List Styling */
-
-#navbar ul{
-    display: flex;
-}
-
-#navbar ul li{
-
+  } */
+  /*  Navigation Bar: Logo and Images */
+  
+  nav img {
+    height: 50px;
+    margin: 10px 20px;
+  }
+  /*  Navigation Bar: List Styling */
+  
+  #navbar ul {
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+  
+  #navbar ul li {
     list-style: none;
     font-size: 1.3rem;
-}
-#navbar ul li a{
-   color: whitesmoke;
-    display: block;
-    border-radius: 20px;
+    display: inline-block;
+  }
+  #navbar ul li a {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    color: whitesmoke;
     text-decoration: none;
-    
-    font-family: 'Playfair Display', serif;
-    padding: 10px 20px;
-}
-#navbar ul li a:hover{
+    font-family: "Playfair Display", serif;
+  }
+  
+  #navbar ul li a:hover {
     color: black;
-   background-color: blanchedalmond;
- }
-
- /* Home Section */
- #home{
-     height: 578px;
-     display: flex;
-     flex-direction: column;
-     padding: 3px 200px;
-     justify-content: center;
-     align-items: center;
- }
- #home::before{
+    background-color: blanchedalmond;
+  }
+  
+  /* Home Section */
+  #home {
+    height: 578px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  #home::before {
     content: "";
-background: url(../images/bg1.jpg) no-repeat center center/cover;
+    background: url(../images/bg1.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -80,141 +81,136 @@ background: url(../images/bg1.jpg) no-repeat center center/cover;
     width: 100%;
     z-index: -1;
     opacity: 0.89;
- }
- #home h1{
-     color: blanchedalmond;
-     font-family: 'Bitter', serif;
- }
- #home p{
-     color: blanchedalmond;
-     font-size: 1.3rem;
-     font-family: 'Baloo Bhaina 2', cursive;
-    }
-    /* Services Section */
-#services{
-margin: 34px;
-display: flex;
-}
-#services .box{
-border: 2px solid brown;
-padding: 30px;
-margin: 3px 6px;
-border-radius: 23px;
-background-color:#ffeeee
-}
-#services .box img{
+  }
+  #home h1 {
+    color: blanchedalmond;
+    font-family: "Bitter", serif;
+  }
+  #home p {
+    color: blanchedalmond;
+    font-size: 1.3rem;
+    font-family: "Baloo Bhaina 2", cursive;
+  }
+  /* Services Section */
+  #services {
+    margin: 34px;
+    display: flex;
+  }
+  #services .box {
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: #ffeeee;
+  }
+  #services .box img {
     height: 150px;
     margin: auto;
     display: block;
-    }
-#services .box p{
+  }
+  #services .box p {
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    font-family: 'Playfair Display', serif;
-}
-#services{
- 
-}
-#services{
-
-}
-/* Clients Section */
-#client-section{
-height: 289px;
-
-}
-#client-section::before{
+    font-family: "Playfair Display", serif;
+  }
+  #services {
+  }
+  #services {
+  }
+  /* Clients Section */
+  #client-section {
+    height: 289px;
+  }
+  #client-section::before {
     content: "";
     position: absolute;
-   
-    background: url('../images/pizza.jpg'); 
+  
+    background: url("../images/pizza.jpg");
     width: 100%;
     height: 100%;
     z-index: -1;
     height: 44%;
     opacity: 0.4;
-}
-#clients{
+  }
+  #clients {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.client-item{
+  }
+  .client-item {
     padding: 34px;
-}
-#clients img{
+  }
+  #clients img {
     height: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-/* Contact Section */
-#contact{
+  }
+  
+  /* Contact Section */
+  #contact {
     position: relative;
-}
-#contact::before{
+  }
+  #contact::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background: url('../images/contact.jpg') no-repeat center center/cover;
-}
-#contact-box{
+    background: url("../images/contact.jpg") no-repeat center center/cover;
+  }
+  #contact-box {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 34px;
-}
-#contact-box input, 
-#contact-box textarea{
+  }
+  #contact-box input,
+  #contact-box textarea {
     width: 100%;
     padding: 0.5rem;
     border-radius: 9px;
     font-size: 1.1rem;
-} 
-#contact-box form{
+  }
+  #contact-box form {
     width: 40%;
-}
-
-#contact-box label{
-   font-size: 1.3rem;
-   font-family: 'Playfair Display', serif;;
-
-}
-/* Footer */
-footer{
+  }
+  
+  #contact-box label {
+    font-size: 1.3rem;
+    font-family: "Playfair Display", serif;
+  }
+  /* Footer */
+  footer {
     background-color: black;
     color: blanchedalmond;
     padding: 9px 20px;
-}
-    /* Utility classes */
-    .h-primary{
-        font-family: 'Playfair Display', serif;
-        font-size: 2.8rem;
-        padding: 12px;
-    }
-    .h-secondary{
-        font-family: 'Playfair Display', serif;
-        font-size: 2.1rem;
-        padding: 12px;
-    }
-    .btn{
-        padding: 6px 20px;
-        border: 2px solid wheat;
-        background-color: brown;
-        color: white;
-        border-radius:10px;
-        margin: 16px;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-.btn:hover{
+  }
+  /* Utility classes */
+  .h-primary {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    padding: 12px;
+  }
+  .h-secondary {
+    font-family: "Playfair Display", serif;
+    font-size: 2.1rem;
+    padding: 12px;
+  }
+  .btn {
+    padding: 6px 20px;
+    border: 2px solid wheat;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    margin: 16px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .btn:hover {
     background-color: black;
-}
-    .center{
-        text-align: center;
-    }
+  }
+  .center {
+    text-align: center;
+  }
+  
